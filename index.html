@@ -12,14 +12,7 @@
   </head>
   <body>
     <div id="wrapper">
-      <div id="header">
-	      <form action="https://formspree.io/alley@qpdx.com"
-		      method="POST">
-		    <input type="text" name="name">
-		    <input type="email" name="_replyto">
-		    <input type="submit" value="Send">
-		</form>
-	      
+      <div id="header"> 
         <h1>Leaflet Draw  Collection Tool</h1>
       </div>
       <div id="map"></div>
@@ -106,7 +99,12 @@
 			$.getJSON(getData, function (data) {
 				cartoData = L.geoJson(data, {
 					onEachFeature: function (feature, layer) {
-						layer.bindPopup('' + feature.properties.description + '<br>Submitted by ' + feature.properties.name + '');
+						layer.bindPopup('' + feature.properties.description + '<br>Submitted by ' + feature.properties.name + '' + '<br /><form action="https://formspree.io/alley@qpdx.com"
+		      method="POST">
+		    <input type="text" name="name">
+		    <input type="email" name="_replyto">
+		    <input type="submit" value="Send">
+		</form>');
 					}
 				}).addTo(map);
 			});
