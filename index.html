@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css"
   integrity="sha384-99ZJFcuBCh9c/V/+8YwDX/TUGG8JWMG+gKFJWzk0BZP3IoDMN+pLGd3/H0yjg4oa"
   crossorigin=""/>
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.12/leaflet.draw.css"/>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.12/leaflet.draw.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -42,10 +42,10 @@
     <script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"
       integrity="sha384-Lh7SNUss9JoImCvc96eCUnLX3HvY4kb0UZCWZbYWvceJ+o5CJeOJqqNoheaGkNHT"
       crossorigin=""></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.12/leaflet.draw.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.12/leaflet.draw.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script>
 
 		//TODO: Change to your username, insert function on Carto, and Carto tablename
@@ -109,7 +109,7 @@
 					   		+ '<input type="text" name="name">'
 					   		+ '<input type="email" name="_replyto">'
 							+ '<textarea name="message" placeholder="Your message"></textarea>'
-							+ '<input type="hidden" name="id" value=' + feature.properties.cartodb_id + '/>'
+							+ '<input type="hidden" name="station_id" value=' + feature.properties.cartodb_id + '>'
 					    	+ '<input type="hidden" name="_next" value="//alleyhector.github.io/crowdmap-basic" />'
 							+ '<input type="submit" value="Send">'
 							+ '</form>'
