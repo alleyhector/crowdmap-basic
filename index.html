@@ -101,10 +101,13 @@
 					onEachFeature: function (feature, layer) {
 						layer.bindPopup('' + feature.properties.description + '<br>Submitted by ' + feature.properties.name + '' 
 								+ '<br /><form action="https://formspree.io/alley@qpdx.com" method="POST">'
-						   + '<input type="text" name="name">'
-						    + '<input type="email" name="_replyto">'
-						    + '<input type="submit" value="Send">'
-						+ '</form>'
+						   		+ '<input type="text" name="name">'
+								+ '<textarea name="message" placeholder="Your message"></textarea>'
+						   		+ '<input type="email" name="_replyto">'
+								+ '<input type="hidden" name="_next" value=' feature.properties.cartodb_id + '/>'
+								+ '<input type="hidden" name="_next" value=' feature.properties.the_geom + '/>'
+						    		+ '<input type="submit" value="Send">'
+								+ '</form>'
 							       );
 					}
 				}).addTo(map);
